@@ -146,3 +146,48 @@ button:hover {
     color: #2ecc71;
     margin: 10px 0;
 }
+
+/* FAQ Section Styles */
+.faq {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.faq h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+details {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+summary {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+details p {
+    padding: 10px;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

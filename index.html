@@ -3,33 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages URL Converter</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free online tool to instantly convert GitHub repository URLs to GitHub Pages URLs. Transform your GitHub repo link to its pages equivalent with one click.">
+    <meta name="keywords" content="github pages url converter, github pages link converter, github.io converter, github pages generator, github pages url generator, github pages link generator">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="GitHub Pages URL Converter - Convert Repository Links Instantly">
+    <meta property="og:description" content="Free tool to convert GitHub repository URLs to GitHub Pages URLs instantly. No more manual conversions needed.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cem1000.github.io/githubPagesConverterLink/">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GitHub Pages URL Converter",
+      "description": "Convert GitHub repository URLs to GitHub Pages URLs instantly",
+      "url": "https://cem1000.github.io/githubPagesConverterLink/",
+      "applicationCategory": "DeveloperTool",
+      "operatingSystem": "Any"
+    }
+    </script>
+
+    <title>GitHub Pages URL Converter | Convert Repository to Pages URL Instantly</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1>GitHub Pages URL Converter</h1>
-        <div class="intro">
-            <h2>Simplify Your GitHub Pages Links</h2>
-            <p>Tired of manually converting GitHub repository URLs to their GitHub Pages equivalents? 
-               This tool instantly transforms your repository URL into its corresponding GitHub Pages link.</p>
+        <section class="intro">
+            <h2>Convert GitHub Repository URLs to Pages URLs Instantly</h2>
+            <p>Instantly transform any GitHub repository URL into its corresponding GitHub Pages link. 
+               Perfect for developers, documentation writers, and project managers who need quick GitHub Pages URLs.</p>
             <div class="example">
-                <p class="example-text">Example transformation:</p>
-                <code>https://github.com/username/repo</code>
-                <span class="arrow">↓</span>
-                <code>https://username.github.io/repo/</code>
+                <p class="example-text">See how it works:</p>
+                <code aria-label="Example GitHub repository URL">https://github.com/username/repo</code>
+                <span class="arrow" aria-hidden="true">↓</span>
+                <code aria-label="Converted GitHub Pages URL">https://username.github.io/repo/</code>
             </div>
-        </div>
-        <div class="input-group">
+        </section>
+        <section class="input-group">
+            <label for="repoUrl" class="visually-hidden">Enter GitHub Repository URL</label>
             <input type="url" 
                    id="repoUrl" 
                    placeholder="Enter GitHub repository URL (e.g., https://github.com/username/repository)"
+                   aria-label="GitHub repository URL input"
                    required>
-            <button onclick="convertUrl()">Convert to GitHub Pages URL</button>
-        </div>
-        <div id="result"></div>
-    </div>
-
+            <button onclick="convertUrl()" aria-label="Convert URL">Convert to GitHub Pages URL</button>
+        </section>
+        <section id="result" aria-live="polite"></section>
+        
+        <!-- Add FAQ Section for SEO -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What is GitHub Pages?</summary>
+                <p>GitHub Pages is a free hosting service that turns GitHub repositories into websites. It's perfect for project documentation, portfolios, and static websites.</p>
+            </details>
+            <details>
+                <summary>How do GitHub Pages URLs work?</summary>
+                <p>GitHub Pages URLs follow the format username.github.io/repository-name. This converter automatically generates the correct URL format for you.</p>
+            </details>
+            <details>
+                <summary>Why use this converter?</summary>
+                <p>This tool saves time by instantly converting repository URLs to their GitHub Pages equivalent, eliminating manual conversion and potential errors.</p>
+            </details>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
