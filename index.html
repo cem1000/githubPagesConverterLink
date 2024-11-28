@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages URL Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Pages URL Converter</h1>
+        <div class="intro">
+            <h2>Simplify Your GitHub Pages Links</h2>
+            <p>Tired of manually converting GitHub repository URLs to their GitHub Pages equivalents? 
+               This tool instantly transforms your repository URL into its corresponding GitHub Pages link.</p>
+            <div class="example">
+                <p class="example-text">Example transformation:</p>
+                <code>https://github.com/username/repo</code>
+                <span class="arrow">↓</span>
+                <code>https://username.github.io/repo/</code>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="url" 
+                   id="repoUrl" 
+                   placeholder="Enter GitHub repository URL (e.g., https://github.com/username/repository)"
+                   required>
+            <button onclick="convertUrl()">Convert to GitHub Pages URL</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
