@@ -27,6 +27,7 @@ body::before {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     backdrop-filter: blur(5px);
+    margin-top: 20px;
 }
 
 h1 {
@@ -219,4 +220,50 @@ details p {
 
 .converted-link:hover {
     text-decoration: underline;
+}
+
+/* Logo and Header Styles */
+.site-header {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+}
+
+.logo-text {
+    color: #2c3e50;
+}
+
+.logo-arrow {
+    color: #2ecc71;
+    font-family: 'Arial', sans-serif;
+    margin: 0 2px;
+    font-weight: 900;
+}
+
+.logo-dot {
+    color: #95a5a6;
+    font-size: 0.8em;
 }
