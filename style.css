@@ -9,7 +9,7 @@ body {
     position: relative;
 }
 
-/* Add overlay to fade the background */
+/* Add overlay to fade the background test*/
 body::before {
     content: '';
     position: fixed;
