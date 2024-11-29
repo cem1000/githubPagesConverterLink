@@ -2,7 +2,10 @@ function setRandomBackground() {
     // Array of background images in your assets folder
     const backgrounds = [
         'assets/background1.png',
-        'assets/background2.png'
+        'assets/background2.png',
+        'assets/background3.png',
+        'assets/background4.png',
+        'assets/background5.png'
     ];
 
     // Get random index
